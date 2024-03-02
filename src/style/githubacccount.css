@@ -1,0 +1,31 @@
+.githubaccount{
+    display: flex;
+    align-items: center;
+    background: #3d2b53;
+    margin: 5px 0px;
+    padding-right: 50px;
+    border-radius: 15px;
+    gap: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+.githubaccount:hover{
+    background-color: #2b5053;
+}
+.githubaccount .profile-img{
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+    border-radius: 15px;
+}
+.githubaccount p{
+  font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: rgb(239, 232, 232);
+}
+.githubaccount .link-img{
+    object-fit: contain;
+    filter: invert(1);
+    height: 16px;
+}
