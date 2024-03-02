@@ -11,6 +11,9 @@ pipeline {
         
         stage('Install dependencies') {
             steps {
+                // Install Node.js and npm
+                sh 'curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -'
+                sh 'sudo apt-get install -y nodejs'
                 // Install project dependencies
                 sh 'npm install'
             }
@@ -22,7 +25,7 @@ pipeline {
                 sh 'npm run lint'
             }
         }
- 
+
         stage('Build') {
             steps {
                 // Build your React application
