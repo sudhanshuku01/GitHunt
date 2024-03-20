@@ -1,10 +1,12 @@
 
 import { useState } from 'react'
-// import githunt_IMG from '../Images/githunt.png'
 import LoadingBar from 'react-top-loading-bar'
 
 const Header = () => {
   const [progress,setProgress]=useState(0)
+  const open=()=>{
+    window.location.reload();
+  }
   return (
     <>
        <LoadingBar
@@ -14,8 +16,7 @@ const Header = () => {
       />
     <div className="header">
       <div className="header-title">
-        {/* <img src={githunt_IMG} alt="githunt" /> */}
-        <h1>GITHUNT</h1>
+        <h1 onClick={open}>GITHUNT</h1>
       </div>
     </div>
     </>
