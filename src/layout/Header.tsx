@@ -6,7 +6,6 @@ const Header = () => {
   const [progress,setProgress]=useState(0)
 
   const open=()=>{
-    console.log("you are in home page now");
     window.location.reload();
   }
 
