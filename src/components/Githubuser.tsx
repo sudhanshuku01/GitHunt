@@ -1,6 +1,6 @@
 import React from "react";
 import { AccountType } from "../utils/Accountsearch";
-import externallink_IMG from '../Images/icons8-external-link-50.png'
+import { FaExternalLinkAlt } from "react-icons/fa";
 interface Props {
   key: number;
   account: AccountType;
@@ -15,7 +15,7 @@ const Githubuser: React.FC<Props> = (account) => {
     <div onClick={handleClick} className="githubaccount">
       <img className="profile-img" src={account?.account.avatar_url} alt="github account icons" />
       <p>{account?.account.login}</p>
-      <img className="link-img" src={externallink_IMG} alt="" />
+      <p><FaExternalLinkAlt/></p>
     </div>
   );
 };

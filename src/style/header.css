@@ -1,22 +1,23 @@
-.header{
+.header {
   display: flex;
   align-items: center;
 }
-.header-title{
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 0px 5px;
+.header-title {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0px 5px;
 }
-.header-title img{
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    border-radius: 16px;
+.header-title img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 16px;
 }
-.header-title h1{
-    font-family: "Teko", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    cursor: pointer;
+.header-title h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  cursor: pointer;
+  color: #330a04;
 }
