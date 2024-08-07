@@ -74,7 +74,7 @@ const Home = () => {
       <div className="home">
         <div className="home-title">
           <h1>
-            THE EASE AND SPEED OF <br /> FINDING THE GIHUB ACCONTS IS IN YOUR
+            THE EASE AND SPEED OF <br /> FINDING THE GITHUB ACCOUNTS IS IN YOUR
             HANDS
           </h1>
           <p>
