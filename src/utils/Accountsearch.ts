@@ -10,9 +10,6 @@ export interface AccountType {
 
 let url = "https://api.github.com/search/users/";
 
-// Replace with your actual token or use an environment variable
-const ACCESS_TOKEN = import.meta.env.VITE_APP_ACCESS_TOKEN;
-
 export const searchAccounts = async (
   searchTerm: string,
   searchType: string
@@ -31,14 +28,9 @@ export const searchAccounts = async (
       url = `https://api.github.com/search/users?q=${searchTerm}+in:email`;
     }
 
-    const response = await axios.get(url, {
-      headers: {
-        Authorization: `Bearer ${ACCESS_TOKEN}`,
-      },
-    });
+    const response = await axios.get(url);
 
     if (response) {
-      console.log(response.data.items);
       return response.data.items;
     } else {
       return [];
